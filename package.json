@@ -5,5 +5,11 @@
   "license": "MIT",
   "dependencies": {
     "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  },
+  "scripts": {
+    "start":"parcel index.html"
   }
 }

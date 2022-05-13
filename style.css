@@ -100,8 +100,8 @@
         grid:
             "ac SQ mod opPlus" 100px 
             "n7 n8 n9 opMoins" 100px 
-            "n4 n5 n6 opDivided" 100px 
-            "n1 n2 n3 opMultiply" 100px 
+            "n4 n5 n6 opMultiply" 100px 
+            "n1 n2 n3 opDivided" 100px 
             "n0 pt opEgal opEgal" 100px / 
             100px 100px 100px 100px;
         gap: var(--spacing);
@@ -207,7 +207,7 @@
         grid-area: opMultiply;
     }
 
-    .operator-divide {
+    .operator-divided {
         grid-area: opDivided;
     }
 /******FIN TOUCHE******/
