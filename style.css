@@ -1,3 +1,4 @@
+/**👌**/
     :root{
         --light:white;
         --dark:#333;
@@ -17,7 +18,7 @@
         --spacing:15px;
     }
 
-/**RESET CSS ******/
+/** 😱 RESET CSS ******/
     *{
         margin:0;
         padding:0;
@@ -33,8 +34,9 @@
     }
 /***** FIN RESET****/
 
+/* my body*/
     body{
-        background:var(--dark) ;
+        background:var(--dark) ; /*itodo --light for --light theme (localstorage)*/
         color:var(--light);  
     }
 
@@ -76,7 +78,7 @@
 
 
 
-    /***** LCD ******/
+/***** LCD ******/
     #display{
         padding:1.4rem;
         border: 1px solid white;
@@ -87,30 +89,29 @@
     text-align: right;
     font-size:3rem;
     }
-    /***** FIN LCD ******/
+/***** FIN LCD ******/
 
 
-    /*****TOUCHE********/
+/*****TOUCHE********/
     #touch-grid{
+        display: grid;
 
-        /* pour redimensionner en tant enfant flex*/
+        /*👎FUCKING SHORT GRID*/
+        grid:
+            "ac SQ mod opPlus" 100px 
+            "n7 n8 n9 opMoins" 100px 
+            "n4 n5 n6 opDivided" 100px 
+            "n1 n2 n3 opMultiply" 100px 
+            "n0 pt opEgal opEgal" 100px / 
+            100px 100px 100px 100px;
+        gap: var(--spacing);
+
         border: 1px solid rgb(236, 233, 42);
         border-radius: var(--corner);
         background-color: var(--main-color);
-        display: grid;
 
-        grid-template-columns: repeat(4,100px);
-        grid-template-rows: repeat(5, 100px);
-
-        grid-template-areas: 
-            "ac SQ mod opPlus" 
-            "n7 n8 n9 opMoins"
-            "n4 n5 n6 opDivided"
-            "n1 n2 n3 opMultiply"
-            "n0 pt opEgal opEgal";
-
+        /* pour redimensionner en tant enfant flex*/
         justify-content: space-evenly;
-        gap: var(--spacing);
         padding:1rem;
         font-size: 2.5rem;
     }
@@ -209,12 +210,10 @@
     .operator-divide {
         grid-area: opDivided;
     }
-
-
-    /******FIN TOUCHE******/
+/******FIN TOUCHE******/
 
 @media screen and (max-width : 600px) {
     .container-center {
-        margin: 5rem 1rem;
+        margin: 1rem;
     }
 }
