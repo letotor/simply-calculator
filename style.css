@@ -212,6 +212,22 @@
     }
 /******FIN TOUCHE******/
 
+
+/******FOOTER********/
+footer{
+    text-align: center;
+}
+
+footer a {
+    color: var(--violet);
+    transition: all .8s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--coral);
+    font-size: 1.2rem;
+}
+/*****FIN FOOTER*****/
 @media screen and (max-width : 600px) {
     .container-center {
         margin: 1rem;
