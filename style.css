@@ -38,6 +38,8 @@
     body{
         background:var(--dark) ; /*itodo --light for --light theme (localstorage)*/
         color:var(--light);  
+
+        font-family: 'Nunito', sans-serif;
     }
 
 /*****CLASSE GENERIQUES****/
@@ -85,9 +87,11 @@
         border-radius: var(--corner);
         /* flex-basis: 100px; */
         background-color: var(--main-color);
-
-    text-align: right;
+   
+     text-align: right;
     font-size:3rem;
+    font-weight: 400;
+
     }
 /***** FIN LCD ******/
 
