@@ -234,6 +234,6 @@ footer a:hover {
 /*****FIN FOOTER*****/
 @media screen and (max-width : 600px) {
     .container-center {
-        margin: 1rem;
+        /* margin: 1rem; */
     }
 }

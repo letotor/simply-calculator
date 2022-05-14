@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto+Flex:wght@400;500&display=swap"
         rel="stylesheet">
-        
-    <script type="text/javascript" src="./index.js" defer></script>
+
+<script type="text/javascript" src="./index.js" defer></script>
    <link href="./style.css" rel="stylesheet" >
 </head>
 
@@ -20,35 +20,36 @@
     <main class="container-center">
         <div class="container-flex ">
             <section id="display">
-                <div class="result">100</div>
+                <div class="result" id="result">0</div>
             </section>
 
             <section id="touch-grid">
-                <div class="item flex-center">1</div>
-                <div class="item flex-center">2</div>
-                <div class="item flex-center">3</div>
-                <div class="item flex-center">4</div>
-                <div class="item flex-center">5</div>
-                <div class="item flex-center">6</div>
-                <div class="item flex-center">7</div>
-                <div class="item flex-center">8</div>
-                <div class="item flex-center">9</div>
-                <div class="item flex-center">0</div>
-                <div class="item flex-center">.</div>
-                <div class="item flex-center red">A/C</div>
-                <div class="item flex-center operator operator-sqrt">√</div>
-                <div class="item flex-center operator operator-percent">%</div>
-                <div class="item flex-center operator operator-plus">+</div>
-                <div class="item flex-center operator operator-moins">-</div>
-                <div class="item flex-center operator operator-multiply">&#215;</div>
-                <div class="item flex-center operator operator-divided" >/</div>
-                <div class="item flex-center operator operator-egal">=</div>
+                <div class="item flex-center"
+                onclick="inputTouch(1)">1</div>
+                <div class="item flex-center" onclick="inputTouch(2)">2</div>
+                <div class="item flex-center" onclick="inputTouch(3)">3</div>
+                <div class="item flex-center" onclick="inputTouch(4)">4</div>
+                <div class="item flex-center" onclick="inputTouch(5)">5</div>
+                <div class="item flex-center" onclick="inputTouch(6)">6</div>
+                <div class="item flex-center" onclick="inputTouch(7)">7</div>
+                <div class="item flex-center" onclick="inputTouch(8)">8</div>
+                <div class="item flex-center" onclick="inputTouch(9)">9</div>
+                <div class="item flex-center" onclick="inputTouch(0)">0</div>
+                <div class="item flex-center" onclick="inputTouch('.')">.</div>
+                <div class="item flex-center red " onclick="inputTouch('AC')">A/C</div>
+                <div class="item flex-center operator operator-sqrt" onclick="inputTouch('sqrt')">√</div>
+                <div class="item flex-center operator operator-percent" onclick="inputTouch('%')">%</div>
+                <div class="item flex-center operator operator-plus" onclick="inputTouch('+')">+</div>
+                <div class="item flex-center operator operator-moins" onclick="inputTouch('-')">-</div>
+                <div class="item flex-center operator operator-multiply" onclick="inputTouch('*')">&#215;</div>
+                <div class="item flex-center operator operator-divided" onclick="inputTouch('/')" >/</div>
+                <div class="item flex-center operator operator-egal" onclick="inputTouch('=')">=</div>
             </section>
 
         </div>
 
     </main>
     <footer class="container-center">Fait avec 💓 . &#169; 2022 - DGwebcreation  - <a href="#">Code Source Github</a></footer>
-
+script>
 </body>
 </html>
